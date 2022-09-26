@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- untuk mensetting default post ke local storage -->
+    <script src="./assets/script/specialized-functions/defaultPost.js"></script>
+    <!-- untuk mensetting default user ke local storage -->
+    <script src="./assets/script/specialized-functions/defaultUser.js"></script>
+    <title>Lana's Blog</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Hello, There!</h1>
+        <p style="margin-bottom: 60px;">Welcome to my <b>Blog</b></p>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <div class="menu-toggle" onclick={toggleMenu()}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#" onclick={renderLatestPost()}><b>Home</b></a>
+            <a href="#" onclick={allPostPage()}><b>All Post</b></a>
+            <a href="#" onclick={renderDashboard()}><b>Dashboard</b></a>
+        </nav>
+    </header>
+
+
+    <!-- main element-->
+    <main class=" row">
+        <!-- div element dgn id content -->
+        <div id="content" class="main">
+            <article>
+                <h2>Introduction</h2>
+                <p>Halo, Perkenalkan nama saya Maulana Malik Ibrahim umur 19 tahun asal Semarang.</p>
+                <p>Saat ini sedang
+                    belajar tentang Web Development khususnya di Frontend, tapi tidak hanya belajar Frontend Development
+                    saya juga belajar Backend Development. Saya juga suka mengeksplorasi hal-hal baru. Karena dulunya
+                    saya adalah siswa SMK jurusan otomotif, jadi Web Development merupakan hal baru bagi saya. Saya juga
+                    suka bermain game, touring, nonton Film, Anime, atau Youtube sambil rebahan :). Harapan buat
+                    kedepannya, segera mendapatkan kerja di bidang IT, terutama Frontend Developer, Aamiin...
+                </p>
+                <p><b>Terima Kasih...</b></p>
+                <p>Perhatian Pesan Ini akan hilang dalam 10 detik!!!</p>
+            </article>
+        </div>
+
+        <!-- aside element -->
+        <aside class="side">
+            <h2>About Me</h2>
+            <img class="fakeimg float-eff" style="object-fit:cover;border-radius: 50%;max-width: 200px;"
+                src="./assets/images/foto.jpg"></img>
+            <p style="text-align: justify;">Hallo Semuanya, Saya Maulana Malik Ibrahim. Disini saya akan membagikan
+                tutorial, tips, dan trick tentang
+                coding dan developing
+            </p>
+            <h3>Social Media</h3>
+            <div class="fakeimg float-eff" style="height:60px;">Email</div><br>
+            <div class="fakeimg float-eff" style="height:60px;">Github</div><br>
+            <div class="fakeimg float-eff" style="height:60px;">Instagram</div><br>
+            <div class="fakeimg float-eff" style="height:60px;">LinkedIn</div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright 2022 &copy; Maulana Malik Ibrahim</p>
+    </div>
+
+    <script src="./assets/script/components/pages/dashboardPage.js"></script>
+    <script src="./assets/script/components/pages/latestPostPage.js"></script>
+    <script src="./assets/script/components/pages/allPostPage.js"></script>
+    <script src="./assets/script/dashboard/post.js"></script>
+    <script src="./assets/script/dashboard/user.js"></script>
+    <script src="./assets/script/dashboard/profile.js"></script>
+    <script src="./assets/script/components/aboutMe.js"></script>
+    <script src="./assets/script/components/toast.js"></script>
+    <script src="./assets/script/specialized-functions/openPost.js"></script>
+    <script src="./assets/script/main.js"></script>
+</body>
+
+</html>
